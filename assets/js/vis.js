@@ -7,6 +7,7 @@ var options = {
     return a.value - b.value;
   },
   zoomable: false,
+  orientation: "top",
   margin: {
       item : {
           horizontal : -1
