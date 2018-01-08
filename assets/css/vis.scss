@@ -1,0 +1,44 @@
+@import "vars";
+
+#timeline {
+  .vis-label.vis-nested-group {
+    background-color: $white;
+    width: 181px;
+    height: 58px;
+  };
+
+  .timeline-room-normal {
+    color: $black;
+    h4 {
+      color: $black;
+    }
+  }
+  .timeline-room-disabled {
+    color: $color_oslo_gray_approx;
+  }
+  .timeline-room-compact {
+    padding: 5px 8px 6px;
+    background: $white;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 1px 8px 0 $color_prussian_blue_28_approx;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 4px;
+    font-weight: bold;
+  };
+
+  .time-slot {
+    background: $white;
+    margin-top: -5px;
+    height: 100%;
+    border: 0;
+    &:active {
+      background: $color_blue_ribbon_approx;
+    }
+    &.busy {
+      background: $color_geyser_approx;
+      &:active {
+        background: $color_gull_gray_approx;
+      }
+    }
+  };
+};

@@ -28,21 +28,6 @@ section {
   margin-bottom: 11px;
   margin-left: 21px; }
 
-.timeline-room-normal {
-  color: #000; }
-  .timeline-room-normal h4 {
-    color: #000; }
-
-.timeline-room-disabled {
-  color: #858e98; }
-
-.timeline-room-compact {
-  padding: 5px 8px 6px;
-  background: #ffffff;
-  box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
-  border-radius: 4px;
-  font-weight: bold; }
-
 .btn {
   border-radius: 4px;
   padding: 12px 24px 14px;
@@ -102,15 +87,6 @@ section {
     position: absolute;
     left: 0;
     top: 0; }
-
-.slot {
-  background: #ffffff; }
-  .slot:active {
-    background: #0059ff; }
-  .slot.busy {
-    background: #d5dfe9; }
-    .slot.busy:active {
-      background: #98a9b9; }
 
 label {
   display: block;

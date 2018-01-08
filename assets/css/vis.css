@@ -1,0 +1,29 @@
+#timeline .vis-label.vis-nested-group {
+  background-color: #ffffff;
+  width: 181px;
+  height: 58px; }
+#timeline .timeline-room-normal {
+  color: #000; }
+  #timeline .timeline-room-normal h4 {
+    color: #000; }
+#timeline .timeline-room-disabled {
+  color: #858e98; }
+#timeline .timeline-room-compact {
+  padding: 5px 8px 6px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
+  border-radius: 4px;
+  font-weight: bold; }
+#timeline .time-slot {
+  background: #ffffff;
+  margin-top: -5px;
+  height: 100%;
+  border: 0; }
+  #timeline .time-slot:active {
+    background: #0059ff; }
+  #timeline .time-slot.busy {
+    background: #d5dfe9; }
+    #timeline .time-slot.busy:active {
+      background: #98a9b9; }
+
+/*# sourceMappingURL=vis.css.map */
