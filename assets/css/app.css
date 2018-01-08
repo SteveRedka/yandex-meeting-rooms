@@ -28,15 +28,15 @@ section {
   margin-bottom: 11px;
   margin-left: 21px; }
 
-.talk-normal {
+.timeline-room-normal {
   color: #000; }
-  .talk-normal h4 {
+  .timeline-room-normal h4 {
     color: #000; }
 
-.talk-disabled {
+.timeline-room-disabled {
   color: #858e98; }
 
-.talk-compact {
+.timeline-room-compact {
   padding: 5px 8px 6px;
   background: #ffffff;
   box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);

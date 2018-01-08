@@ -35,16 +35,16 @@ section {
   margin-left: 21px;
 }
 
-.talk-normal {
+.timeline-room-normal {
   color: $black;
   h4 {
     color: $black;
   }
 }
-.talk-disabled {
+.timeline-room-disabled {
   color: $color_oslo_gray_approx;
 }
-.talk-compact {
+.timeline-room-compact {
   padding: 5px 8px 6px;
   background: $white;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
