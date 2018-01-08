@@ -1,0 +1,18 @@
+.sample {
+  display: inline-block;
+  margin: 0 60px; }
+
+section {
+  padding: 20px 0; }
+  section:nth-child(even) {
+    background: #FAFAFA; }
+
+h1, h2, h3, h4 {
+  color: #C7C7C7; }
+
+.square {
+  width: 57px;
+  height: 58px;
+  display: inline-block; }
+
+/*# sourceMappingURL=dev.css.map */

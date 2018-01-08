@@ -1,0 +1,148 @@
+body {
+  font-family: HelveticaNeue-Medium, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 15px;
+  spacing: 0 17px;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: auto; }
+  body h4 {
+    margin: 0; }
+
+section {
+  background-color: #ffffff;
+  padding: 16px; }
+
+#header {
+  border-bottom: 1px solid #e9ecef;
+  background-color: #ffffff;
+  padding-top: 1px; }
+
+#logo {
+  display: block;
+  width: 149px;
+  height: 21px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 15px;
+  margin-bottom: 11px;
+  margin-left: 21px; }
+
+.talk-normal {
+  color: #000; }
+  .talk-normal h4 {
+    color: #000; }
+
+.talk-disabled {
+  color: #858e98; }
+
+.talk-compact {
+  padding: 5px 8px 6px;
+  background: #ffffff;
+  box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
+  border-radius: 4px;
+  font-weight: bold; }
+
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px 14px;
+  display: inline-block;
+  text-decoration: none;
+  background: #e9ecef;
+  cursor: pointer; }
+  .btn:active {
+    background: #dde0e4; }
+  .btn.btn-primary {
+    background: #007dff;
+    color: #ffffff; }
+    .btn.btn-primary:active {
+      background: #0059ff; }
+  .btn.btn-disabled {
+    background: #e9ecef;
+    color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed; }
+
+.knob {
+  background-color: #e9ecef;
+  border-radius: 100%;
+  background-position: 50% 50%;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block; }
+  .knob:active {
+    background-color: #dcdfe1; }
+
+.knob-edit {
+  background-image: url(../img/edit.svg); }
+
+.member {
+  background: #e9ecef;
+  border-radius: 16px;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  width: 288px;
+  margin: 4px;
+  display: inline-block; }
+  .member:active {
+    background: #e2e3e4; }
+  .member .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.slot {
+  background: #ffffff; }
+  .slot:active {
+    background: #0059ff; }
+  .slot.busy {
+    background: #d5dfe9; }
+    .slot.busy:active {
+      background: #98a9b9; }
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px; }
+
+input {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  border: solid 2px #e9ecef;
+  border-radius: 4px;
+  font-family: HelveticaNeue, Helvetica, Arial, Lucida Grande, sans-serif;
+  width: 328px;
+  margin-bottom: 6px; }
+  input.input-time {
+    width: 153px;
+    display: inline-block; }
+
+.room {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  width: 316px; }
+  .room .room-time {
+    padding-right: 12px;
+    font-weight: bold; }
+
+.room-selected {
+  background-color: #007dff;
+  color: #ffffff; }
+
+.link-danger {
+  color: red;
+  text-decoration: none;
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */

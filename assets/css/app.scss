@@ -1,0 +1,201 @@
+//colors
+$black: #000;
+$color_oslo_gray_approx: #858e98;
+$white: #ffffff;
+$color_prussian_blue_28_approx: rgba(0, 44, 92, 0.28);
+$color_gallery_approx: #e9ecef;
+$color_bon_jour_approx: #dde0e4;
+$color_azure_radiance_approx: #007dff;
+$color_blue_ribbon_approx: #0059ff;
+$black_20: rgba(0, 0, 0, 0.2);
+$color_alto_approx: #dcdfe1;
+$color_mercury_approx: #e2e3e4;
+$color_geyser_approx: #d5dfe9;
+$color_gull_gray_approx: #98a9b9;
+
+//fonts
+$font_0: HelveticaNeue-Medium;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: Lucida Grande;
+$font_4: sans-serif;
+$font_5: HelveticaNeue;
+
+//urls
+$url_logo: url(../img/logo.svg);
+$url_0: url(../img/edit.svg);
+
+body {
+  font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
+  font-size: 15px;
+  spacing: 0 17px;
+  background-color: $color_gallery_approx;
+  margin: 0;
+  padding: auto;
+  h4 {
+    margin: 0;
+  }
+}
+
+section {
+  background-color: $white;
+  padding: 16px;
+}
+
+#header {
+  border-bottom: 1px solid $color_gallery_approx;
+  background-color: $white;
+  padding-top: 1px;
+}
+
+#logo {
+  display: block;
+  width: 149px;
+  height: 21px;
+  background-image: $url_logo;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 15px;
+  margin-bottom: 11px;
+  margin-left: 21px;
+}
+
+.talk-normal {
+  color: $black;
+  h4 {
+    color: $black;
+  }
+}
+.talk-disabled {
+  color: $color_oslo_gray_approx;
+}
+.talk-compact {
+  padding: 5px 8px 6px;
+  background: $white;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 1px 8px 0 $color_prussian_blue_28_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+  font-weight: bold;
+}
+.btn {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+  padding: 12px 24px 14px;
+  display: inline-block;
+  text-decoration: none;
+  background: $color_gallery_approx;
+  cursor: pointer;
+  &:active {
+    background: $color_bon_jour_approx;
+  }
+  &.btn-primary {
+    background: $color_azure_radiance_approx;
+    color: $white;
+    &:active {
+      background: $color_blue_ribbon_approx;
+    }
+  }
+  &.btn-disabled {
+    background: $color_gallery_approx;
+    color: $black_20;
+    cursor: not-allowed;
+  }
+}
+.knob {
+  background-color: $color_gallery_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 100%;
+  background-position: 50% 50%;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  &:active {
+    background-color: $color_alto_approx;
+  }
+}
+.knob-edit {
+  background-image: $url_0;
+}
+.member {
+  background: $color_gallery_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 16px;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  width: 288px;
+  margin: 4px;
+  display: inline-block;
+  &:active {
+    background: $color_mercury_approx;
+  }
+  .avatar {
+    height: 32px;
+    width: 32px;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+.slot {
+  background: $white;
+  &:active {
+    background: $color_blue_ribbon_approx;
+  }
+  &.busy {
+    background: $color_geyser_approx;
+    &:active {
+      background: $color_gull_gray_approx;
+    }
+  }
+}
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+}
+input {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  border: solid 2px $color_gallery_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+  font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+  width: 328px;
+  margin-bottom: 6px;
+  &.input-time {
+    width: 153px;
+    display: inline-block;
+  }
+}
+.room {
+  background-color: $color_gallery_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  width: 316px;
+  .room-time {
+    padding-right: 12px;
+    font-weight: bold;
+  }
+}
+.room-selected {
+  background-color: $color_azure_radiance_approx;
+  color: $white;
+}
+
+.link-danger {
+  color: red;
+  text-decoration: none;
+  text-align: center;
+}
