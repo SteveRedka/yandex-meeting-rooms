@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" />
+  <link rel="shortcut icon" type="image/svg" href="assets/img/edit.svg"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+<header id="header">
+  <a id="logo"></a>
+</header>
+<div id="calendar-date"><span class="knob knob-left"></span> 15 дек - сегодня <span class="knob knob-right"></span></div>
+<div id="timeline">Insert timeline thingy</div>
+
+
+<div id="visualization"></div>
+
+<script type="text/javascript">
+  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization');
+
+  var groups = [
+    {
+      id: 1,
+      content: "Ржавый Фред"
+    },
+    {
+      id: 2,
+      content: "Прачечная"
+    },
+    {
+      id: 3,
+      content: "Желтый Дом"
+    },
+    {
+      id: 4,
+      content: "Оранжевый Тюльпан"
+    }
+  ];
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    {id: 1, content: 'item 1', start: '2015-12-15 6:00:00', end: '2015-12-15 11:00:00', group: 1},
+    {id: 2, content: 'item 2', start: '2015-12-15 12:00:00', end: '2015-12-15 22:00:00', group: 1},
+    {id: 3, content: 'item 3', start: '2015-12-15 6:00:00', end: '2015-12-15 8:05:00', group: 2},
+    {id: 4, content: 'item 4', start: '2015-12-15 6:00:00', end: '2015-12-15 7:00:00', group: 3},
+    {id: 5, content: 'item 5', start: '2015-12-15 8:30:00', end: '2015-12-15 10:00:00', group: 3},
+    {id: 6, content: 'item 6', start: '2015-12-15 6:00:00', end: '2015-12-15 8:45:00', group: 4},
+    {id: 7, content: 'item 7', start: '2015-12-15 9:15:00', end: '2015-12-15 13:00:00', group: 4}
+  ]);
+
+  // Configuration for the Timeline
+  var options = {};
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, groups, options);
+</script>
+
+
+</body>
+</html>

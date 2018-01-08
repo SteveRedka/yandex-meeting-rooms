@@ -23,7 +23,9 @@ $font_5: HelveticaNeue;
 
 //urls
 $url_logo: url(../img/logo.svg);
-$url_0: url(../img/edit.svg);
+$img_edit: url(../img/edit.svg);
+$img_left: url(../img/arrow2.svg);
+$img_right: url(../img/arrow.svg);
 
 body {
   font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
@@ -117,8 +119,15 @@ section {
   }
 }
 .knob-edit {
-  background-image: $url_0;
+  background-image: $img_edit;
 }
+.knob-left {
+  background-image: $img_left;
+}
+.knob-right {
+  background-image: $img_right;
+}
+
 .member {
   background: $color_gallery_approx;
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)

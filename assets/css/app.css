@@ -77,6 +77,12 @@ section {
 .knob-edit {
   background-image: url(../img/edit.svg); }
 
+.knob-left {
+  background-image: url(../img/arrow2.svg); }
+
+.knob-right {
+  background-image: url(../img/arrow.svg); }
+
 .member {
   background: #e9ecef;
   border-radius: 16px;
