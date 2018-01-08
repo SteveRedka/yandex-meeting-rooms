@@ -88,7 +88,7 @@ items.add([
 items.add([
   {start: '2015-12-15 07:15:00', end: '2015-12-15 11:45:00', group: 61, className: "time-slot busy"},
   {start: '2015-12-15 12:30:00', end: '2015-12-15 17:00:00', group: 62, className: "time-slot busy"},
-  {start: '2015-12-15 17:05:00', end: '2015-12-15 21:05:00', group: 62, className: "time-slot busy"},
+  {start: '2015-12-15 17:00:00', end: '2015-12-15 21:05:00', group: 62, className: "time-slot busy"},
   {start: '2015-12-15 07:30:00', end: '2015-12-15 12:15:00', group: 63, className: "time-slot busy"},
   {start: '2015-12-15 07:30:00', end: '2015-12-15 11:45:00', group: 64, className: "time-slot busy"},
   {start: '2015-12-15 13:15:00', end: '2015-12-15 13:30:00', group: 64, className: "time-slot busy"},
@@ -106,13 +106,13 @@ var options = {
   groupOrder: function (a, b) {
     return a.value - b.value;
   },
-  zoomable: false
-  // autoResize: false
+  zoomable: false,
+  margin: {
+      item : {
+          horizontal : -1
+      }
+  }
 };
 
 // Create a Timeline
 var timeline = new vis.Timeline(container, items, groups, options);
-
-document.querySelectorAll('vis-label').forEach(function (item) {
-  item.style = ''
-});
