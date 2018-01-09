@@ -7,6 +7,22 @@
 #timeline .vis-panel {
   border: 0; }
 
+#timeline .current-time-bar {
+  background-color: #007dff;
+  z-index: 2;
+  margin-top: 25px;
+  margin-bottom: -25px; }
+#timeline .timebar-timer {
+  position: absolute;
+  text-align: center;
+  width: 49px;
+  left: -14px;
+  background-color: #007dff;
+  color: #ffffff;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: bold; }
+
 #timeline .vis-label.vis-nested-group {
   background-color: #ffffff;
   width: 181px;
