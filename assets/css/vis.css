@@ -14,6 +14,10 @@
   box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
   border-radius: 4px;
   font-weight: bold; }
+#timeline .timeline-store {
+  color: #858e98;
+  text-transform: uppercase;
+  height: 37px; }
 #timeline .time-slot {
   background: #ffffff;
   margin-top: -5px;
@@ -25,5 +29,26 @@
     background: #d5dfe9; }
     #timeline .time-slot.busy:active {
       background: #98a9b9; }
+#timeline .vis-foreground .vis-group {
+  border-bottom: 1px solid transparent; }
+#timeline .vis-labelset .vis-label {
+  border-bottom: 1px solid #e9ecef; }
+#timeline .vis-timeline {
+  border: 0; }
+#timeline .vis-panel {
+  border: 0; }
+#timeline .vis-group.timeline-room-normal, #timeline .vis-group.timeline-room-disabled {
+  background: #ffffff; }
+  #timeline .vis-group.timeline-room-normal:active, #timeline .vis-group.timeline-room-disabled:active {
+    background: #0059ff; }
+#timeline .vis-time-axis .vis-text {
+  font-weight: bold;
+  color: #262626;
+  font-size: 11px; }
+#timeline .vis-time-axis .vis-grid.vis-minor, #timeline .vis-time-axis .vis-grid.vis-major {
+  border-width: 1px;
+  border-color: rgba(19, 100, 205, 0.1);
+  z-index: 999;
+  pointer-events: none; }
 
 /*# sourceMappingURL=vis.css.map */

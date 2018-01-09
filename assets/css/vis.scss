@@ -26,6 +26,12 @@
     font-weight: bold;
   };
 
+  .timeline-store {
+    color: $color_oslo_gray_approx;
+    text-transform: uppercase;
+    height: 37px;
+  }
+
   .time-slot {
     background: $white;
     margin-top: -5px;
@@ -41,4 +47,44 @@
       }
     }
   };
+
+  .vis-foreground .vis-group {
+    border-bottom: 1px solid transparent;
+  }
+
+  .vis-labelset .vis-label {
+    border-bottom: 1px solid $color_gallery_approx;
+  }
+
+  .vis-timeline {
+    border: 0;
+  }
+
+  .vis-panel {
+    border: 0;
+  }
+
+  .vis-group.timeline-room-normal, .vis-group.timeline-room-disabled{
+    background: $white;
+    &:active {
+      background: $color_blue_ribbon_approx;
+    };
+  };
+  // Hours on time ruler:
+  .vis-time-axis {
+    .vis-text {
+      font-weight: bold;
+      color: #262626;
+      font-size: 11px;
+    }
+  }
+
+  .vis-time-axis {
+    .vis-grid.vis-minor, .vis-grid.vis-major {
+      border-width: 1px;
+      border-color: rgba(19,100,205,0.1);
+      z-index: 999;
+      pointer-events: none;
+    }
+  }
 };

@@ -1,24 +1,25 @@
 // create a data set with groups
 var groups = new vis.DataSet();
 
+// Stores
 groups.add([
   {
     id: 7,
     value: 1,
     content: "7 этаж",
     nestedGroups: [71,72,73,74],
-    transparent: true,
-    className: 'transparent'
+    className: 'timeline-store'
   },
   {
     id: 6,
     value: 2,
     content: "6 этаж",
     nestedGroups: [61,62,63,64,65],
-    transparent: true
+    className: 'timeline-store'
   }
 ]);
 
+// Rooms
 groups.add([
   {
     id: 71,

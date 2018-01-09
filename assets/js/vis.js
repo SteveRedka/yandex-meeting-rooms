@@ -12,6 +12,11 @@ var options = {
       item : {
           horizontal : -1
       }
+  },
+  format: {
+    minorLabels: {
+      hour: "H"
+    }
   }
 };
 
