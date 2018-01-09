@@ -1,0 +1,17 @@
+#timeline {
+  .vis-foreground .vis-group {
+    border-bottom: 1px solid transparent;
+  };
+
+  .vis-labelset .vis-label {
+    border-bottom: 1px solid $color_gallery_approx;
+  };
+
+  .vis-timeline {
+    border: 0;
+  };
+
+  .vis-panel {
+    border: 0;
+  };
+};

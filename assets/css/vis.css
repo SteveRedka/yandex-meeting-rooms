@@ -1,3 +1,12 @@
+#timeline .vis-foreground .vis-group {
+  border-bottom: 1px solid transparent; }
+#timeline .vis-labelset .vis-label {
+  border-bottom: 1px solid #e9ecef; }
+#timeline .vis-timeline {
+  border: 0; }
+#timeline .vis-panel {
+  border: 0; }
+
 #timeline .vis-label.vis-nested-group {
   background-color: #ffffff;
   width: 181px;
@@ -29,14 +38,6 @@
     background: #d5dfe9; }
     #timeline .time-slot.busy:active {
       background: #98a9b9; }
-#timeline .vis-foreground .vis-group {
-  border-bottom: 1px solid transparent; }
-#timeline .vis-labelset .vis-label {
-  border-bottom: 1px solid #e9ecef; }
-#timeline .vis-timeline {
-  border: 0; }
-#timeline .vis-panel {
-  border: 0; }
 #timeline .vis-group.timeline-room-normal, #timeline .vis-group.timeline-room-disabled {
   background: #ffffff; }
   #timeline .vis-group.timeline-room-normal:active, #timeline .vis-group.timeline-room-disabled:active {

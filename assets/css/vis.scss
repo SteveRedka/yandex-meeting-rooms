@@ -1,4 +1,5 @@
 @import "vars";
+@import "border-fixes";
 
 #timeline {
   .vis-label.vis-nested-group {
@@ -47,22 +48,6 @@
       }
     }
   };
-
-  .vis-foreground .vis-group {
-    border-bottom: 1px solid transparent;
-  }
-
-  .vis-labelset .vis-label {
-    border-bottom: 1px solid $color_gallery_approx;
-  }
-
-  .vis-timeline {
-    border: 0;
-  }
-
-  .vis-panel {
-    border: 0;
-  }
 
   .vis-group.timeline-room-normal, .vis-group.timeline-room-disabled{
     background: $white;
