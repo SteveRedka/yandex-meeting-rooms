@@ -1,4 +1,5 @@
 @import "vars";
+@import "dialogs";
 
 body {
   font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
@@ -10,6 +11,10 @@ body {
   h4 {
     margin: 0;
   }
+}
+
+p {
+  line-height: 6px;
 }
 
 section {
