@@ -23,47 +23,47 @@ groups.add([
 groups.add([
   {
     id: 71,
-    content: "Ржавый Фред",
+    content: "<h4>Ржавый Фред</h4><span>3-6 человек</span>",
     className: "timeline-room-disabled"
   },
   {
     id: 72,
-    content: "Прачечная",
+    content: "<h4>Прачечная</h4><span>До 10 человек</span>",
     className: "timeline-room-normal"
   },
   {
     id: 73,
-    content: "Желтый дом",
+    content: "<h4>Желтый дом</h4><span>До 10 человек</span>",
     className: "timeline-room-normal"
   },
   {
     id: 74,
-    content: "Оранжевый тюльпан",
+    content: "<h4>Оранжевый тюльпан</h4><span>3-6 человек</span>",
     className: "timeline-room-disabled"
   },
   {
     id: 61,
-    content: "Джокер",
+    content: "<h4>Джокер</h4><span>3-6 человек</span>",
     className: "timeline-room-normal"
   },
   {
     id: 62,
-    content: "Мариванна",
+    content: "<h4>Мариванна</h4><span>До 10 человек</span>",
     className: "timeline-room-normal"
   },
   {
     id: 63,
-    content: "Тонкий Боб",
+    content: "<h4>Тонкий Боб</h4><span>До 10 человек</span>",
     className: "timeline-room-normal"
   },
   {
     id: 64,
-    content: "Черная вдова",
+    content: "<h4>Черная вдова</h4><span>3-6 человек</span>",
     className: "timeline-room-normal"
   },
   {
     id: 65,
-    content: "Белорусский ликёр",
+    content: "<h4>Белорусский ликёр</h4><span>3-6 человек</span>",
     className: "timeline-room-normal"
   }
 ]);

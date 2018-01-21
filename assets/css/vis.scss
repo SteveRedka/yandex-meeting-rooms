@@ -3,29 +3,50 @@
 @import "timebar";
 
 #timeline {
-  .vis-label.vis-nested-group {
-    background-color: $white;
-    width: 181px;
-    height: 58px;
-  };
-
-  .timeline-room-normal {
+  .vis-labelset {
+    overflow: visible;
+    padding-right: 5px;
+    .timeline-room-disabled .vis-inner {
+      color: $color_oslo_gray_approx;
+      h4 {
+        color: $color_oslo_gray_approx;
+      }
+    }
+    &.vis-labelset-normal {
+    }
+    &.vis-labelset-transparent {
+      .vis-nested-group .vis-inner {
+        padding: 5px 8px 6px;
+        background: $white;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1px 8px 0 $color_prussian_blue_28_approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 4px;
+        font-weight: bold;
+        span {
+          display: none;
+        }
+      };
+      .vis-label.vis-nested-group {
+        background: transparent;
+      }
+    }
+  }
+  .vis-inner {
     color: $black;
     h4 {
       color: $black;
     }
   }
-  .timeline-room-disabled {
-    color: $color_oslo_gray_approx;
+
+  .vis-label .vis-inner {
+    z-index: 100;
   }
-  .timeline-room-compact {
-    padding: 5px 8px 6px;
-    background: $white;
-    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-    box-shadow: 0 1px 8px 0 $color_prussian_blue_28_approx;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 4px;
-    font-weight: bold;
+  .vis-label.vis-nested-group {
+    background-color: $white;
+    width: 181px;
+    height: 58px;
+    z-index: 100;
   };
 
   .timeline-store {

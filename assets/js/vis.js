@@ -2,6 +2,7 @@
 var container = document.getElementById('timeline');
 
 // Configuration for the Timeline
+var startDate = new Date('2015-12-15 6:00:00');
 var options = {
   groupOrder: function (a, b) {
     return a.value - b.value;
@@ -19,6 +20,8 @@ var options = {
     }
   },
   onInitialDrawComplete: appendTimebarTimer,
+  min: startDate,
+  max: new Date('2015-12-21 6:00:00'),
   zoomMax: Number('1000 * 60 * 60 * 24'),
   zoomMin: Number('1000 * 60 * 60 * 24'),
   width: 1242,
@@ -39,5 +42,16 @@ timeline.addCustomTime(customDate, 'current-time-bar');
 timeline.on("rangechange", modifyLabelsetClass)
 
 function modifyLabelsetClass() {
-  console.log('ss')
+  // Unfortunately, there is no documented way to measure offset in vis.js in pixels.
+  // Fortunately, fixed zoom is implied in task
+  // Thus, offset is measured in hours.
+  threeHours = 3 * 1000 * 60 * 60;
+  if (timeline.range.start - Number(startDate) > threeHours) {
+    $('#timeline .vis-labelset').addClass('vis-labelset-transparent');
+    $('#timeline .vis-labelset').removeClass('vis-labelset-normal');
+    $('#timeline .vis-center').css('margin-left', '-181px');
+  } else {
+    $('#timeline .vis-labelset').removeClass('vis-labelset-transparent');
+    $('#timeline .vis-labelset').addClass('vis-labelset-normal');
+  }
 }
