@@ -23,6 +23,7 @@
         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
         border-radius: 4px;
         font-weight: bold;
+        width: auto;
         span {
           display: none;
         }
@@ -47,6 +48,10 @@
     width: 181px;
     height: 58px;
     z-index: 100;
+  };
+
+  .vis-label.vis-nesting-group {
+    width: 181px;
   };
 
   .timeline-store {

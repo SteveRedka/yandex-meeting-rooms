@@ -35,7 +35,8 @@
     background: #ffffff;
     box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
     border-radius: 4px;
-    font-weight: bold; }
+    font-weight: bold;
+    width: auto; }
     #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group .vis-inner span {
       display: none; }
   #timeline .vis-labelset.vis-labelset-transparent .vis-label.vis-nested-group {
@@ -51,6 +52,8 @@
   width: 181px;
   height: 58px;
   z-index: 100; }
+#timeline .vis-label.vis-nesting-group {
+  width: 181px; }
 #timeline .timeline-store {
   color: #858e98;
   text-transform: uppercase;

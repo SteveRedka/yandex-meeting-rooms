@@ -51,8 +51,11 @@ function modifyLabelsetClass() {
     $('#timeline .vis-labelset').removeClass('vis-labelset-normal');
     // $('#timeline .vis-center').css('margin-left', '-181px');
     // $('#timeline .vis-top').css('margin-left', '-181px');
+    $('#timeline .vis-left').css('width', '0');
+    $('#timeline .vis-left').css('overflow', 'visible');
   } else {
     $('#timeline .vis-labelset').removeClass('vis-labelset-transparent');
     $('#timeline .vis-labelset').addClass('vis-labelset-normal');
+    $('#timeline .vis-left').css('width', 'auto');
   }
 }
