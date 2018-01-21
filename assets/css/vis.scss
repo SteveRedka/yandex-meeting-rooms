@@ -48,6 +48,9 @@
     width: 181px;
     height: 58px;
     z-index: 100;
+    .vis-inner {
+      margin-left: -16px;
+    }
   };
 
   .vis-label.vis-nesting-group {
