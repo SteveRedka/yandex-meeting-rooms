@@ -49,7 +49,8 @@ function modifyLabelsetClass() {
   if (timeline.range.start - Number(startDate) > threeHours) {
     $('#timeline .vis-labelset').addClass('vis-labelset-transparent');
     $('#timeline .vis-labelset').removeClass('vis-labelset-normal');
-    $('#timeline .vis-center').css('margin-left', '-181px');
+    // $('#timeline .vis-center').css('margin-left', '-181px');
+    // $('#timeline .vis-top').css('margin-left', '-181px');
   } else {
     $('#timeline .vis-labelset').removeClass('vis-labelset-transparent');
     $('#timeline .vis-labelset').addClass('vis-labelset-normal');
