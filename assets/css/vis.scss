@@ -79,9 +79,9 @@
     }
   };
 
-  .vis-group.timeline-room-normal, .vis-group.timeline-room-disabled{
+  .vis-group.timeline-room-normal, .vis-group.timeline-room-disabled {
     background: $white;
-    &:active {
+    &:active, .active {
       background: $color_blue_ribbon_approx;
     };
   };

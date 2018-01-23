@@ -73,7 +73,7 @@
       background: #98a9b9; }
 #timeline .vis-group.timeline-room-normal, #timeline .vis-group.timeline-room-disabled {
   background: #ffffff; }
-  #timeline .vis-group.timeline-room-normal:active, #timeline .vis-group.timeline-room-disabled:active {
+  #timeline .vis-group.timeline-room-normal:active, #timeline .vis-group.timeline-room-normal .active, #timeline .vis-group.timeline-room-disabled:active, #timeline .vis-group.timeline-room-disabled .active {
     background: #0059ff; }
 #timeline .vis-time-axis .vis-text {
   font-weight: bold;

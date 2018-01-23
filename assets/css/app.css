@@ -36,7 +36,7 @@ section {
   padding-top: 1px; }
 
 #logo {
-  display: block;
+  display: inline-block;
   width: 149px;
   height: 21px;
   background-image: url(../img/logo.svg);
@@ -144,5 +144,9 @@ input {
   color: red;
   text-decoration: none;
   text-align: center; }
+
+.pull-right {
+  float: right;
+  margin: 2px 5px; }
 
 /*# sourceMappingURL=app.css.map */
