@@ -33,6 +33,7 @@
   #timeline .vis-labelset.vis-labelset-transparent {
     background: transparent; }
     #timeline .vis-labelset.vis-labelset-transparent .vis-label {
+      z-index: 1011;
       border-bottom: 0px; }
     #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group {
       background: transparent; }

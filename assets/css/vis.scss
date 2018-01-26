@@ -16,6 +16,7 @@
     }
     &.vis-labelset-transparent {
       .vis-label {
+        z-index: 1011;
         border-bottom: 0px;
       }
       background: transparent;
