@@ -5,7 +5,7 @@ Error: Undefined variable: "$color_azure_radiance_approx".
 1: #timeline {
 2:   .current-time-bar {
 3:     background-color: $color_azure_radiance_approx;
-4:     z-index: 10;
+4:     z-index: 1001;
 5:     margin-top: 25px;
 6:     margin-bottom: -25px;
 7:   };
@@ -77,4 +77,4 @@ css/timebar.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color_azure_radiance_approx\".\A         on line 3 of css/timebar.scss\A \A 1: #timeline {\A 2:   .current-time-bar {\A 3:     background-color: $color_azure_radiance_approx;\A 4:     z-index: 10;\A 5:     margin-top: 25px;\A 6:     margin-bottom: -25px;\A 7:   };\A 8:   .timebar-timer {"; }
+  content: "Error: Undefined variable: \"$color_azure_radiance_approx\".\A         on line 3 of css/timebar.scss\A \A 1: #timeline {\A 2:   .current-time-bar {\A 3:     background-color: $color_azure_radiance_approx;\A 4:     z-index: 1001;\A 5:     margin-top: 25px;\A 6:     margin-bottom: -25px;\A 7:   };\A 8:   .timebar-timer {"; }

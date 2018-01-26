@@ -102,4 +102,12 @@
       pointer-events: none;
     }
   }
+
+  .vis-text.vis-minor {
+    display: inline-block;
+    width: auto !important;
+    transform: translateX(-50%);
+    background: $color_gallery_approx;
+    z-index: 1000;
+  }
 };
