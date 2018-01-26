@@ -1,6 +1,26 @@
 @import "vars";
 @import "dialogs";
 
+@mixin member {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 16px;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  margin: 4px;
+  display: inline-block;
+  .avatar {
+    height: 32px;
+    width: 32px;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
 body {
   font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
   font-size: 15px;
@@ -88,17 +108,10 @@ section {
   background-image: $img_right;
 }
 
-.member {
+.member-invited {
+  @include member;
   background: $color_gallery_approx;
-  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-  border-radius: 16px;
-  position: relative;
-  padding-top: 7px;
-  padding-bottom: 8px;
-  padding-left: 40px;
   width: 288px;
-  margin: 4px;
-  display: inline-block;
   &:active {
     background: $color_mercury_approx;
   }
@@ -112,6 +125,11 @@ section {
     top: 0;
   }
 }
+
+.member {
+  @include member;
+}
+
 label {
   display: block;
   font-weight: bold;

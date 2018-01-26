@@ -47,6 +47,7 @@
     background-color: $white;
     width: 181px;
     height: 58px;
+    max-height: 58px;
     z-index: 100;
     .vis-inner {
       margin-left: -16px;
@@ -78,6 +79,10 @@
       }
     }
   };
+
+  .vis-group {
+    max-height: 59px;
+  }
 
   .vis-group.timeline-room-normal, .vis-group.timeline-room-disabled {
     background: $white;

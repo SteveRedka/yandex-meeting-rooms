@@ -86,18 +86,41 @@ section {
 .knob-right {
   background-image: url(../img/arrow.svg); }
 
-.member {
-  background: #e9ecef;
+.member-invited {
   border-radius: 16px;
   position: relative;
   padding-top: 7px;
   padding-bottom: 8px;
   padding-left: 40px;
-  width: 288px;
+  margin: 4px;
+  display: inline-block;
+  background: #e9ecef;
+  width: 288px; }
+  .member-invited .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .member-invited:active {
+    background: #e2e3e4; }
+  .member-invited .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.member {
+  border-radius: 16px;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  padding-left: 40px;
   margin: 4px;
   display: inline-block; }
-  .member:active {
-    background: #e2e3e4; }
   .member .avatar {
     height: 32px;
     width: 32px;

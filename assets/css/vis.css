@@ -51,6 +51,7 @@
   background-color: #ffffff;
   width: 181px;
   height: 58px;
+  max-height: 58px;
   z-index: 100; }
   #timeline .vis-label.vis-nested-group .vis-inner {
     margin-left: -16px; }
@@ -71,6 +72,8 @@
     background: #d5dfe9; }
     #timeline .time-slot.busy:active {
       background: #98a9b9; }
+#timeline .vis-group {
+  max-height: 59px; }
 #timeline .vis-group.timeline-room-normal, #timeline .vis-group.timeline-room-disabled {
   background: #ffffff; }
   #timeline .vis-group.timeline-room-normal:active, #timeline .vis-group.timeline-room-normal .active, #timeline .vis-group.timeline-room-disabled:active, #timeline .vis-group.timeline-room-disabled .active {
