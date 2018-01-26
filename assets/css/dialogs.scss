@@ -1,4 +1,6 @@
-body .ui-dialog {
+@import "vars";
+
+body .ui-dialog.ui-widget-content  {
   z-index: 1005;
   .ui-dialog-content {
     text-align: center;
@@ -9,6 +11,16 @@ body .ui-dialog {
       width: 40px;
       height: 40px;
     }
+  }
+  span {
+    color: black;
+  }
+}
+
+#vis-tooltip {
+  color: #777 !important;
+  span, div, p {
+    color: black;
   }
 }
 

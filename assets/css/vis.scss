@@ -15,6 +15,7 @@
     &.vis-labelset-normal {
     }
     &.vis-labelset-transparent {
+      background: transparent;
       .vis-nested-group .vis-inner {
         padding: 5px 8px 6px;
         background: $white;
@@ -28,9 +29,13 @@
           display: none;
         }
       };
-      .vis-label.vis-nested-group {
-        background: transparent;
+      .vis-label{
+        border-bottom: 0px;
       }
+        .vis-nested-group {
+          background: transparent;
+        }
+
     }
   }
   .vis-inner {
@@ -41,13 +46,15 @@
   }
 
   .vis-label .vis-inner {
-    z-index: 100;
+    z-index: 1011;
   }
   .vis-label.vis-nested-group {
     background-color: $white;
     width: 181px;
-    height: 58px;
-    max-height: 58px;
+    height: 59px;
+    min-height: 59px;
+    max-height: 59px;
+    border-bottom: 0px;
     z-index: 100;
     .vis-inner {
       margin-left: -16px;
@@ -61,7 +68,7 @@
   .timeline-store {
     color: $color_oslo_gray_approx;
     text-transform: uppercase;
-    height: 37px;
+    height: 31px;
   }
 
   .time-slot {
@@ -85,6 +92,9 @@
   }
 
   .vis-group.timeline-room-normal, .vis-group.timeline-room-disabled {
+    height: 59px;
+    min-height: 59px;
+    max-height: 59px;
     background: $white;
     &:active, .active {
       background: $color_blue_ribbon_approx;

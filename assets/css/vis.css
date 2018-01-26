@@ -30,28 +30,34 @@
     color: #858e98; }
     #timeline .vis-labelset .timeline-room-disabled .vis-inner h4 {
       color: #858e98; }
-  #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group .vis-inner {
-    padding: 5px 8px 6px;
-    background: #ffffff;
-    box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
-    border-radius: 4px;
-    font-weight: bold;
-    width: auto; }
-    #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group .vis-inner span {
-      display: none; }
-  #timeline .vis-labelset.vis-labelset-transparent .vis-label.vis-nested-group {
+  #timeline .vis-labelset.vis-labelset-transparent {
     background: transparent; }
+    #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group .vis-inner {
+      padding: 5px 8px 6px;
+      background: #ffffff;
+      box-shadow: 0 1px 8px 0 rgba(0, 44, 92, 0.28);
+      border-radius: 4px;
+      font-weight: bold;
+      width: auto; }
+      #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group .vis-inner span {
+        display: none; }
+    #timeline .vis-labelset.vis-labelset-transparent .vis-label {
+      border-bottom: 0px; }
+    #timeline .vis-labelset.vis-labelset-transparent .vis-nested-group {
+      background: transparent; }
 #timeline .vis-inner {
   color: #000; }
   #timeline .vis-inner h4 {
     color: #000; }
 #timeline .vis-label .vis-inner {
-  z-index: 100; }
+  z-index: 1011; }
 #timeline .vis-label.vis-nested-group {
   background-color: #ffffff;
   width: 181px;
-  height: 58px;
-  max-height: 58px;
+  height: 59px;
+  min-height: 59px;
+  max-height: 59px;
+  border-bottom: 0px;
   z-index: 100; }
   #timeline .vis-label.vis-nested-group .vis-inner {
     margin-left: -16px; }
@@ -60,7 +66,7 @@
 #timeline .timeline-store {
   color: #858e98;
   text-transform: uppercase;
-  height: 37px; }
+  height: 31px; }
 #timeline .time-slot {
   background: #ffffff;
   margin-top: -5px;
@@ -75,6 +81,9 @@
 #timeline .vis-group {
   max-height: 59px; }
 #timeline .vis-group.timeline-room-normal, #timeline .vis-group.timeline-room-disabled {
+  height: 59px;
+  min-height: 59px;
+  max-height: 59px;
   background: #ffffff; }
   #timeline .vis-group.timeline-room-normal:active, #timeline .vis-group.timeline-room-normal .active, #timeline .vis-group.timeline-room-disabled:active, #timeline .vis-group.timeline-room-disabled .active {
     background: #0059ff; }

@@ -1,13 +1,20 @@
-body .ui-dialog {
+body .ui-dialog.ui-widget-content {
   z-index: 1005; }
-  body .ui-dialog .ui-dialog-content {
+  body .ui-dialog.ui-widget-content .ui-dialog-content {
     text-align: center;
     border-radius: 8px;
     border: 0;
     padding: 32px 0; }
-    body .ui-dialog .ui-dialog-content .dialog-emoji {
+    body .ui-dialog.ui-widget-content .ui-dialog-content .dialog-emoji {
       width: 40px;
       height: 40px; }
+  body .ui-dialog.ui-widget-content span {
+    color: black; }
+
+#vis-tooltip {
+  color: #777 !important; }
+  #vis-tooltip span, #vis-tooltip div, #vis-tooltip p {
+    color: black; }
 
 body .ui-widget-overlay {
   background-color: rgba(0, 16, 33, 0.8);
