@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/vis.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" />
     <link rel="shortcut icon" type="image/svg" href="assets/img/edit.svg"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -21,9 +21,30 @@
     </header>
     <div id="calendar-date"><span class="knob knob-left"></span> 15 дек - сегодня <span class="knob knob-right"></span></div>
     <div id="timeline"></div>
+
+    <div id="vis-tooltip" title="Рассуждения о высоком">
+      <p><span class="knob knob-edit" /></p>
+      <p class="vis-tooltip-title">Рассуждения о высоком</p>
+      <p class="vis-tooltip-details">
+        <span class="vis-tooltip-date">14 декабря</span>,
+        <span class="vis-tooltip-time-start">15:00</span>
+         -
+        <span class="vis-tooltip-time-end">17:00</span>
+         ·
+        <span class="vis-tooltip-room">Жёлтый дом</span>
+      </p>
+      <p class="vis-tooltip-participants">Дарт Вейдер и 12 участников</p>
+    </div>
+
     <script src="assets/js/addons/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/addons/jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="assets/js/addons/jquery-ui/jquery-ui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/ru.js"></script>
+    <script src="assets/js/dialogs.js"></script>
     <script src="assets/js/append-timebar-timer.js"></script>
     <script src="assets/js/vis-populate.js"></script>
     <script src="assets/js/vis.js"></script>
+
   </body>
 </html>

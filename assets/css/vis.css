@@ -9,7 +9,7 @@
 
 #timeline .current-time-bar {
   background-color: #007dff;
-  z-index: 2;
+  z-index: 10;
   margin-top: 25px;
   margin-bottom: -25px; }
 #timeline .timebar-timer {

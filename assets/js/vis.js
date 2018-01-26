@@ -1,6 +1,12 @@
 // DOM element where the Timeline will be attached
 var container = document.getElementById('timeline');
 
+// These functions will be fired upon initial creation of timeline
+afterInitialDrawFunctions = function() {
+  addMeetingPopups()
+  appendTimebarTimer()
+}
+
 // Configuration for the Timeline
 var startDate = new Date('2015-12-15 6:00:00');
 var options = {
@@ -19,7 +25,7 @@ var options = {
       hour: "H"
     }
   },
-  onInitialDrawComplete: appendTimebarTimer,
+  onInitialDrawComplete: afterInitialDrawFunctions,
   min: startDate,
   max: new Date('2015-12-21 6:00:00'),
   zoomMax: Number('1000 * 60 * 60 * 24'),
@@ -59,3 +65,5 @@ function modifyLabelsetClass() {
     $('#timeline .vis-left').css('width', 'auto');
   }
 }
+
+
