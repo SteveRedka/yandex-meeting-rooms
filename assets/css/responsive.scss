@@ -30,6 +30,23 @@
   section {
     margin: 0;
   }
+
+  .edit-page {
+    background: $white;
+  }
+
+  .member-invited {
+    width: auto;
+    padding-right: 35px;
+  }
+
+  .room {
+    width: 100%;
+  }
+
+  #app {
+    margin-bottom: 400px;
+  }
 }
 @media (min-width: $screen-lg-min) {
   /* rules for large (> 1200) */
