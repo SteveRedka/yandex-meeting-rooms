@@ -8,7 +8,7 @@ afterInitialDrawFunctions = function() {
 }
 
 // Configuration for the Timeline
-var startDate = new Date('2015-12-15 6:00:00');
+var startDate = new Date('2015-12-15 5:55:00');
 var options = {
   groupOrder: function (a, b) {
     return a.value - b.value;
