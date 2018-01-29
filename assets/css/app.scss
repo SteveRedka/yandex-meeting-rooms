@@ -1,5 +1,6 @@
 @import "vars";
 @import "dialogs";
+@import "responsive";
 
 @mixin member {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
@@ -45,6 +46,7 @@ body {
   padding: auto;
   h4 {
     margin: 0;
+    font-size: 13px;
   }
 }
 
@@ -149,7 +151,8 @@ section {
 .member-invited {
   @include member;
   background: $color_gallery_approx;
-  width: 288px;
+  width: 100%;
+  box-sizing: border-box;
   &:active {
     background: $color_mercury_approx;
   }
@@ -229,9 +232,10 @@ input {
   padding-top: 13px;
   padding-bottom: 14px;
   padding-left: 12px;
-  width: 316px;
+  width: 100%;
   position: relative;
   margin: 4px 0;
+  box-sizing: border-box;
   .room-time {
     padding-right: 12px;
     font-weight: bold;

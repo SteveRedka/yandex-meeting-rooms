@@ -20,6 +20,69 @@ body .ui-widget-overlay {
   background-color: rgba(0, 16, 33, 0.8);
   opacity: 1; }
 
+@media (min-width: 480px) {
+  /* rules for mobile horizontal (480 > 768)  */ }
+@media (min-width: 768px) {
+  /* rules for tablet (768 > 992) */ }
+@media (min-width: 992px) {
+  .col-md-1 {
+    width: 8.3333333%;
+    float: left;
+    padding-left: 5px; }
+
+  .col-md-2 {
+    width: 16.6666666%;
+    float: left;
+    padding-left: 5px; }
+
+  .col-md-3 {
+    width: 25%;
+    float: left;
+    padding-left: 5px; }
+
+  .col-md-4 {
+    width: 33%;
+    float: left;
+    padding-left: 5px; }
+
+  .col-md-5 {
+    width: 41%;
+    float: left;
+    padding-left: 5px; }
+
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-left: 5px; }
+
+  .col-md-offset-1 {
+    margin-left: 8.3333333%;
+    padding-left: 5px; } }
+@media (min-width: 1200px) {
+  /* rules for large (> 1200) */ }
+.row {
+  clear: both; }
+
+@media (min-width: 480px) {
+  /* rules for mobile horizontal (480 > 768)  */ }
+@media (min-width: 768px) {
+  /* rules for tablet (768 > 992) */ }
+@media (min-width: 992px) {
+  section {
+    margin: 0;
+    padding: 0; }
+
+  .edit-page {
+    background: #ffffff; }
+
+  .member-invited {
+    width: auto;
+    padding-right: 35px; }
+
+  #app {
+    margin-bottom: 400px; } }
+@media (min-width: 1200px) {
+  /* rules for large (> 1200) */ }
 body {
   font-family: HelveticaNeue-Medium, Helvetica, Arial, Lucida Grande, sans-serif;
   font-size: 15px;
@@ -28,7 +91,8 @@ body {
   margin: 0;
   padding: auto; }
   body h4 {
-    margin: 0; }
+    margin: 0;
+    font-size: 13px; }
 
 p {
   line-height: 6px; }
@@ -143,7 +207,8 @@ section {
   margin: 4px;
   display: inline-block;
   background: #e9ecef;
-  width: 288px; }
+  width: 100%;
+  box-sizing: border-box; }
   .member-invited .avatar {
     height: 32px;
     width: 32px;
@@ -227,9 +292,10 @@ input {
   padding-top: 13px;
   padding-bottom: 14px;
   padding-left: 12px;
-  width: 316px;
+  width: 100%;
   position: relative;
-  margin: 4px 0; }
+  margin: 4px 0;
+  box-sizing: border-box; }
   .room .room-time {
     padding-right: 12px;
     font-weight: bold; }
