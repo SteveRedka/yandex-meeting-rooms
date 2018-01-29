@@ -64,6 +64,13 @@ section {
   border-bottom: 1px solid $color_gallery_approx;
   background-color: $white;
   padding-top: 1px;
+  .pull-right {
+    margin-right: 7px;
+    margin-top: 7px;
+  }
+  .btn {
+    padding: 8px;
+  }
 }
 
 #footer {
@@ -97,6 +104,7 @@ section {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 4px;
   padding: 12px 24px 14px;
+  box-sizing: border-box;
   display: inline-block;
   text-decoration: none;
   background: $color_gallery_approx;

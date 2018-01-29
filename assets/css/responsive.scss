@@ -25,6 +25,32 @@
   #app {
     margin-bottom: 400px;
   }
+
+  #header {
+    height: 71px;
+    .pull-right {
+      margin-right: 26px;
+      position: relative;
+      top: 50%;
+      margin-top: -23px;
+        .btn {
+        padding: 13px 16px 7px;
+        height: 46px;
+      }
+    }
+    #logo {
+      width: 175px;
+      height: 30px;
+      top: 50%;
+      position: relative;
+      margin-top: -15px;
+    }
+  }
+
+  .btn {
+    padding: 13px 16px 7px;
+    height: 46px;
+  }
 }
 @media (min-width: $screen-lg-min) {
   /* rules for large (> 1200) */
