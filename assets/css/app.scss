@@ -55,6 +55,7 @@ p {
 section {
   background-color: $white;
   padding: 16px;
+  margin: 8px 0;
 }
 
 #header {
@@ -173,7 +174,7 @@ label {
 }
 
 .input-form {
-  width: 400px;
+  width: 100%;
 }
 
 .input-group {
@@ -195,7 +196,7 @@ input {
   overflow: visible;
   position: relative;
   &.input-time {
-    width: 44%;
+    max-width: 70px;
     display: inline-block;
   }
 }
@@ -226,6 +227,8 @@ input {
   color: red;
   text-decoration: none;
   text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .pull-left {
