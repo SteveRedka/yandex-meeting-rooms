@@ -180,16 +180,16 @@ section {
 .knob {
   background-color: #e9ecef;
   border-radius: 100%;
-  mask-position: 50% 50%;
-  mask-size: 15px;
-  mask-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 15px;
+  background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   display: inline-block; }
   .knob:active {
     background-color: #dcdfe1; }
 
-.input-knob {
+.input-icon {
   mask-position: 50% 50%;
   mask-size: 15px;
   mask-repeat: no-repeat;
@@ -198,32 +198,47 @@ section {
   display: inline-block;
   position: absolute;
   right: 10px;
-  top: 10; }
+  top: 10px; }
 
-.knob-calendar {
+.icon-calendar {
   -webkit-mask-image: url(../img/calendar.svg);
   mask-image: url(../img/calendar.svg);
   background-color: #98a9b9; }
 
-.knob-close {
+.icon-close {
   -webkit-mask-image: url(../img/close.svg);
   mask-image: url(../img/close.svg);
   background-color: #98a9b9; }
 
-.knob-edit {
+.icon-edit {
   -webkit-mask-image: url(../img/edit.svg);
   mask-image: url(../img/edit.svg);
   background-color: #98a9b9; }
 
-.knob-left {
+.icon-left {
   -webkit-mask-image: url(../img/arrow2.svg);
   mask-image: url(../img/arrow2.svg);
   background-color: #98a9b9; }
 
-.knob-right {
+.icon-right {
   -webkit-mask-image: url(../img/arrow.svg);
   mask-image: url(../img/arrow.svg);
   background-color: #98a9b9; }
+
+.knob-calendar {
+  background-image: url(../img/calendar.svg); }
+
+.knob-close {
+  background-image: url(../img/close.svg); }
+
+.knob-edit {
+  background-image: url(../img/edit.svg); }
+
+.knob-left {
+  background-image: url(../img/arrow2.svg); }
+
+.knob-right {
+  background-image: url(../img/arrow.svg); }
 
 .member-invited {
   border-radius: 16px;
@@ -252,7 +267,7 @@ section {
     position: absolute;
     left: 0;
     top: 0; }
-  .member-invited .input-knob {
+  .member-invited .input-icon {
     top: 5px; }
 
 .member {
@@ -338,7 +353,7 @@ input {
 .room-selected {
   background-color: #007dff;
   color: #ffffff; }
-  .room-selected .knob-close {
+  .room-selected .icon-close {
     background-color: #ffffff; }
 
 .link-danger {
