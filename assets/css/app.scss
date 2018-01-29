@@ -73,6 +73,10 @@ section {
   border-top: 8px solid $color_gallery_approx;
   text-align: center;
   min-height: 40px;
+  .btn {
+    margin: 0 4px;
+    min-width: 15%; // This actually goes against the task, but looks much better.
+  }
 }
 
 #logo {
@@ -171,6 +175,10 @@ label {
   display: block;
   font-weight: bold;
   font-size: 13px;
+}
+
+#app {
+  margin-bottom: 80px;
 }
 
 .input-form {

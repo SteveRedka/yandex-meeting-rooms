@@ -52,6 +52,9 @@ section {
   border-top: 8px solid #e9ecef;
   text-align: center;
   min-height: 40px; }
+  #footer .btn {
+    margin: 0 4px;
+    min-width: 15%; }
 
 #logo {
   display: inline-block;
@@ -180,6 +183,9 @@ label {
   display: block;
   font-weight: bold;
   font-size: 13px; }
+
+#app {
+  margin-bottom: 80px; }
 
 .input-form {
   width: 100%; }
