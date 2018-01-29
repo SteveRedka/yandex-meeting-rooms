@@ -21,6 +21,21 @@
   }
 }
 
+@mixin knob {
+  mask-position: 50% 50%;
+  mask-size: 15px;
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+@mixin knob-mask($url) {
+  -webkit-mask-image: $url;
+  mask-image: $url;
+  background-color: $color_gull_gray_approx;
+}
+
 body {
   font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
   font-size: 15px;
@@ -88,24 +103,31 @@ section {
   background-color: $color_gallery_approx;
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 100%;
-  background-position: 50% 50%;
-  background-size: 15px;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
+  @include knob;
   &:active {
     background-color: $color_alto_approx;
   }
 }
+.input-knob {
+  @include knob;
+  position: absolute;
+  right: 10px;
+  top: 10;
+}
+.knob-calendar {
+  @include knob-mask($img_calendar);
+}
+.knob-close {
+  @include knob-mask($img_close);
+}
 .knob-edit {
-  background-image: $img_edit;
+  @include knob-mask($img_edit);
 }
 .knob-left {
-  background-image: $img_left;
+  @include knob-mask($img_left);
 }
 .knob-right {
-  background-image: $img_right;
+  @include knob-mask($img_right);
 }
 
 .member-invited {
@@ -124,6 +146,9 @@ section {
     left: 0;
     top: 0;
   }
+  .input-knob {
+    top: 5px;
+  }
 }
 
 .member {
@@ -135,19 +160,31 @@ label {
   font-weight: bold;
   font-size: 13px;
 }
+
+.input-form {
+  width: 400px;
+}
+
+.input-group {
+  width: 100%;
+  position: relative;
+}
+
 input {
-  display: block;
-  padding-top: 13px;
-  padding-bottom: 14px;
-  padding-left: 10px;
+  display: inline-block;
+  padding: 11px;
   border: solid 2px $color_gallery_approx;
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 4px;
   font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
-  width: 328px;
+  width: 100%;
   margin-bottom: 6px;
+  height: 46px;
+  font-size: 16px;
+  overflow: visible;
+  position: relative;
   &.input-time {
-    width: 153px;
+    width: 44%;
     display: inline-block;
   }
 }
@@ -159,9 +196,13 @@ input {
   padding-bottom: 14px;
   padding-left: 12px;
   width: 316px;
+  position: relative;
   .room-time {
     padding-right: 12px;
     font-weight: bold;
+  }
+  .knob-close {
+    background-color: $white;
   }
 }
 .room-selected {
@@ -173,6 +214,10 @@ input {
   color: red;
   text-decoration: none;
   text-align: center;
+}
+
+.pull-left {
+  float: left;
 }
 
 .pull-right {

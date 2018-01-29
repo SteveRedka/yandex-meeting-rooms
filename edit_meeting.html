@@ -15,30 +15,57 @@
     <header id="header">
       <a id="logo"></a>
     </header>
+    <div class="input-form1">
     <section>
       <h2>Редактирование встречи</h2>
-      <label>Тема</label>
-      <input value="Тестовое задание в ШРИ">
-      <label>Дата и время</label>
-      <input type="date" value="2017-12-14">
-      <input class="input-time" type="time"> - <input class="input-time" type="time">
+        <div class='form-group'>
+          <label>Тема</label>
+          <div class="input-group">
+            <input value="Тестовое задание в ШРИ">
+            <span class="knob-close input-knob" />
+          </div>
+        </div>
+        <div class='form-group'>
+          <label>Дата и время</label>
+          <div class="input-group">
+            <input value="2017-12-14">
+            <span class="knob-calendar input-knob" />
+          </div>
+        </div>
+        <div class='form-group' style="width: 91%;">
+          <input class="input-time" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" value="16:00">
+          &nbsp;—&nbsp;
+          <input class="input-time pull-right" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" value="16:30">
+        </div>
     </section>
     <section>
-      <label>Участники</label>
-      <input placeholder="Например, Тор Одинович">
+      <div class='form-group'>
+        <label>Участники</label>
+        <input placeholder="Например, Тор Одинович">
+      </div>
       <div class="member-invited">
         <img src="assets/img/avatar.jpeg" class="avatar">
         Лекс Лютер
+        <span class="knob-close input-knob" />
       </div>
       <div class="member-invited">
         <img src="assets/img/avatar2.jpeg" class="avatar">
         Кларк Кент
+        <span class="knob-close input-knob" />
       </div>
     </section>
     <section>
-      <h3>Ваша переговорка</h3>
+      <h4>Ваша переговорка</h4>
       <div class="room room-selected">
         <span class="room-time">16:00-16:30</span> Готем - 4 этаж
+            <span class="knob-close input-knob" />
+      </div>
+    </section>
+    <section>
+      <h4>Рекомендованные переговорки</h4>
+      <div class="room room-selected">
+        <span class="room-time">16:00-16:30</span> Готем - 4 этаж
+            <span class="knob-close input-knob" />
       </div>
     </section>
     <section>
@@ -48,6 +75,7 @@
       <a class="btn">Отмена</a>
       <a class="btn btn-primary">Сохранить</a>
     </section>
+    </div>
 
     <script src="assets/js/addons/jquery-3.2.1.min.js"></script>
     <script src="assets/js/addons/jquery-ui/jquery-ui.min.js"></script>

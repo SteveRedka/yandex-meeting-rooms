@@ -75,23 +75,50 @@ section {
 .knob {
   background-color: #e9ecef;
   border-radius: 100%;
-  background-position: 50% 50%;
-  background-size: 15px;
-  background-repeat: no-repeat;
+  mask-position: 50% 50%;
+  mask-size: 15px;
+  mask-repeat: no-repeat;
   width: 24px;
   height: 24px;
   display: inline-block; }
   .knob:active {
     background-color: #dcdfe1; }
 
+.input-knob {
+  mask-position: 50% 50%;
+  mask-size: 15px;
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10; }
+
+.knob-calendar {
+  -webkit-mask-image: url(../img/calendar.svg);
+  mask-image: url(../img/calendar.svg);
+  background-color: #98a9b9; }
+
+.knob-close {
+  -webkit-mask-image: url(../img/close.svg);
+  mask-image: url(../img/close.svg);
+  background-color: #98a9b9; }
+
 .knob-edit {
-  background-image: url(../img/edit.svg); }
+  -webkit-mask-image: url(../img/edit.svg);
+  mask-image: url(../img/edit.svg);
+  background-color: #98a9b9; }
 
 .knob-left {
-  background-image: url(../img/arrow2.svg); }
+  -webkit-mask-image: url(../img/arrow2.svg);
+  mask-image: url(../img/arrow2.svg);
+  background-color: #98a9b9; }
 
 .knob-right {
-  background-image: url(../img/arrow.svg); }
+  -webkit-mask-image: url(../img/arrow.svg);
+  mask-image: url(../img/arrow.svg);
+  background-color: #98a9b9; }
 
 .member-invited {
   border-radius: 16px;
@@ -119,6 +146,8 @@ section {
     position: absolute;
     left: 0;
     top: 0; }
+  .member-invited .input-knob {
+    top: 5px; }
 
 .member {
   border-radius: 16px;
@@ -141,18 +170,27 @@ label {
   font-weight: bold;
   font-size: 13px; }
 
+.input-form {
+  width: 400px; }
+
+.input-group {
+  width: 100%;
+  position: relative; }
+
 input {
-  display: block;
-  padding-top: 13px;
-  padding-bottom: 14px;
-  padding-left: 10px;
+  display: inline-block;
+  padding: 11px;
   border: solid 2px #e9ecef;
   border-radius: 4px;
   font-family: HelveticaNeue, Helvetica, Arial, Lucida Grande, sans-serif;
-  width: 328px;
-  margin-bottom: 6px; }
+  width: 100%;
+  margin-bottom: 6px;
+  height: 46px;
+  font-size: 16px;
+  overflow: visible;
+  position: relative; }
   input.input-time {
-    width: 153px;
+    width: 44%;
     display: inline-block; }
 
 .room {
@@ -161,10 +199,13 @@ input {
   padding-top: 13px;
   padding-bottom: 14px;
   padding-left: 12px;
-  width: 316px; }
+  width: 316px;
+  position: relative; }
   .room .room-time {
     padding-right: 12px;
     font-weight: bold; }
+  .room .knob-close {
+    background-color: #ffffff; }
 
 .room-selected {
   background-color: #007dff;
@@ -174,6 +215,9 @@ input {
   color: red;
   text-decoration: none;
   text-align: center; }
+
+.pull-left {
+  float: left; }
 
 .pull-right {
   float: right;
