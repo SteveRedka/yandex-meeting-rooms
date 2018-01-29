@@ -197,17 +197,18 @@ input {
   padding-left: 12px;
   width: 316px;
   position: relative;
+  margin: 4px 0;
   .room-time {
     padding-right: 12px;
     font-weight: bold;
-  }
-  .knob-close {
-    background-color: $white;
   }
 }
 .room-selected {
   background-color: $color_azure_radiance_approx;
   color: $white;
+  .knob-close {
+    background-color: $white;
+  }
 }
 
 .link-danger {

@@ -200,16 +200,17 @@ input {
   padding-bottom: 14px;
   padding-left: 12px;
   width: 316px;
-  position: relative; }
+  position: relative;
+  margin: 4px 0; }
   .room .room-time {
     padding-right: 12px;
     font-weight: bold; }
-  .room .knob-close {
-    background-color: #ffffff; }
 
 .room-selected {
   background-color: #007dff;
   color: #ffffff; }
+  .room-selected .knob-close {
+    background-color: #ffffff; }
 
 .link-danger {
   color: red;
