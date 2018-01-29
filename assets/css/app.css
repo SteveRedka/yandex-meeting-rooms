@@ -36,7 +36,7 @@ body .ui-widget-overlay {
     padding-left: 5px; }
 
   .col-md-3 {
-    width: 25%;
+    width: 24%;
     float: left;
     padding-left: 5px; }
 
@@ -250,7 +250,7 @@ label {
   font-size: 13px; }
 
 #app {
-  margin-bottom: 80px; }
+  margin-bottom: 120px; }
 
 .input-form {
   width: 100%; }
@@ -261,14 +261,25 @@ label {
 
 .time-input-group {
   display: inline-block;
-  padding: 0; }
+  padding: 0;
+  width: 44%;
+  box-sizing: border-box; }
   .time-input-group label {
     display: none; }
   @media (min-width: 992px) {
     .time-input-group {
-      padding: 0 5px; }
+      width: 42%; }
       .time-input-group label {
         display: block; } }
+
+.time-input-dash {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  font-weight: bold; }
+  @media (min-width: 992px) {
+    .time-input-dash {
+      width: 12%; } }
 
 input {
   display: inline-block;
@@ -282,9 +293,6 @@ input {
   font-size: 16px;
   overflow: visible;
   position: relative; }
-  input.input-time {
-    max-width: 70px;
-    display: inline-block; }
 
 .room {
   background-color: #e9ecef;
@@ -317,8 +325,7 @@ input {
   float: left; }
 
 .pull-right {
-  float: right;
-  margin: 2px 5px; }
+  float: right; }
 
 .row {
   background: #ffffff; }

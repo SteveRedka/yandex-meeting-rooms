@@ -181,7 +181,7 @@ label {
 }
 
 #app {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .input-form {
@@ -196,14 +196,26 @@ label {
 .time-input-group {
   display: inline-block;
   padding: 0;
+  width: 44%;
+  box-sizing: border-box;
   label {
     display: none;
   }
   @media (min-width: $screen-md-min) {
-    padding: 0 5px;
+    width: 42%;
     label {
       display: block;
     }
+  }
+}
+
+.time-input-dash {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  font-weight: bold;
+  @media (min-width: $screen-md-min) {
+    width: 12%;
   }
 }
 
@@ -220,10 +232,6 @@ input {
   font-size: 16px;
   overflow: visible;
   position: relative;
-  &.input-time {
-    max-width: 70px;
-    display: inline-block;
-  }
 }
 .room {
   background-color: $color_gallery_approx;
@@ -263,7 +271,6 @@ input {
 
 .pull-right {
   float: right;
-  margin: 2px 5px;
 }
 
 .row {
