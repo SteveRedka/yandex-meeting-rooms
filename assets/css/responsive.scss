@@ -26,6 +26,10 @@
     margin-left: 8.3333333%;
     padding-left: 5px;
   }
+
+  section {
+    margin: 0;
+  }
 }
 @media (min-width: $screen-lg-min) {
   /* rules for large (> 1200) */
