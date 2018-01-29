@@ -194,6 +194,17 @@ label {
   width: 100%;
   position: relative; }
 
+.time-input-group {
+  display: inline-block;
+  padding: 0; }
+  .time-input-group label {
+    display: none; }
+  @media (min-width: 992px) {
+    .time-input-group {
+      padding: 0 5px; }
+      .time-input-group label {
+        display: block; } }
+
 input {
   display: inline-block;
   padding: 11px;

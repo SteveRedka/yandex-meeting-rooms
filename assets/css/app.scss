@@ -190,6 +190,20 @@ label {
   position: relative;
 }
 
+.time-input-group {
+  display: inline-block;
+  padding: 0;
+  label {
+    display: none;
+  }
+  @media (min-width: $screen-md-min) {
+    padding: 0 5px;
+    label {
+      display: block;
+    }
+  }
+}
+
 input {
   display: inline-block;
   padding: 11px;
