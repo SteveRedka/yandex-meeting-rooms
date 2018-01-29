@@ -63,6 +63,17 @@ section {
   padding-top: 1px;
 }
 
+#footer {
+  background-color: $white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 16px;
+  border-top: 8px solid $color_gallery_approx;
+  text-align: center;
+  min-height: 40px;
+}
+
 #logo {
   display: inline-block;
   width: 149px;

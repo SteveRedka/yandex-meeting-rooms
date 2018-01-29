@@ -42,6 +42,16 @@ section {
   background-color: #ffffff;
   padding-top: 1px; }
 
+#footer {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 16px;
+  border-top: 8px solid #e9ecef;
+  text-align: center;
+  min-height: 40px; }
+
 #logo {
   display: inline-block;
   width: 149px;
