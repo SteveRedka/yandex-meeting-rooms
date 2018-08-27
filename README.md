@@ -1,18 +1,5 @@
-Задание на вёрстку
-======
-Две страницы для сервиса бронирования переговорок из первого задания.
+# Yandex meeting rooms layout
 
-[Задание](https://academy.yandex.ru/events/frontend/shri_msk-2018/register/)
+[Demo](https://steveredka.github.io/yandex-meeting-rooms)
 
-[Макеты](https://yandex-shri-msk-2018.github.io/entrance-task-2)
-
-[Репозиторий](https://github.com/yandex-shri-msk-2018/entrance-task-2)
-
-## Решения:
-* Для таймлайна был использован плагин [vis.js](http://visjs.org/). Использование готового и задокументированного решения позволяет избежать дендро-фекального подхода и значительно упростить выполнение дальнейших задач.
-* Попапы были сделаны при помощи jquery.ui. В ретроспективе было бы лучше сделать это с нуля или использовать модалы из Bootstrap.
-* Сетка была написана с нуля. Возможно, следовало сразу использовать бутстрап, поскольку многие элементы и так мимикрируют под них.
-
-## Контакты
-
-e-mail: cogitofallacy@gmail.com
+Submission to Yandex School of Interfaces. Built on [vis.js](http://visjs.org/)
